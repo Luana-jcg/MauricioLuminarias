@@ -101,7 +101,6 @@ INSERT INTO `usuarios` (`id_usuario`, `nome`, `email`, `senha`, `perfil`) VALUES
 ALTER TABLE `fotos`
   ADD CONSTRAINT `fotos_ibfk_1` FOREIGN KEY (`usuario_id`) REFERENCES `usuarios` (`id_usuario`);
 
--- insert into fotos values(null,'Foto1.png','png',null,1);
 -- insert into fotos values(null,'Foto3.png','png',null,1);
 -- insert into fotos values(null,'Foto4.png','png',null,1);
 -- insert into fotos values(null,'Foto5.png','png',null,1);

@@ -1,4 +1,4 @@
-<center><h1 class="mt-5">Administração</h1></center>
+<center><h1 class="mt-5">Olá, <?php echo $_SESSION['nome'];?>. Bem vindo a área de administração.</h1></center>
 
 <div class="m-5" style="margin-top: 40px">
 

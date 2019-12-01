@@ -26,7 +26,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <style>
             body{
-                background-color: #152836
+                background-color:#4F4F4F;
             }
             .demo-gallery > ul {
                 margin-bottom: 0;

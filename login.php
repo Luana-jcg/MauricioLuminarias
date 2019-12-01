@@ -85,11 +85,7 @@
             <div class="d-flex justify-content-center h-100">
                 <div class="card h-100">
                     <div class="card-header">
-                        <h3><img src="imagens/logo.png" style="width: 150px;" alt=""></h3>
-                        <div class="d-flex justify-content-end social_icon">
-                            <span><i class="fab fa-facebook"></i></span>
-                            <span><i class="fab fa-instagram"></i></span>
-                        </div>
+                        <h3><img src="imagens/logo.png" style="width: 50px;" alt=""></h3>
                     </div>
 
                     <div class="card-body">

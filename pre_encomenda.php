@@ -69,7 +69,7 @@
         <?php include 'topo.php'; ?>
         <div class="d-flex justify-content-center">
 
-            <div class="card mt-2 grow">
+            <div class="card mt-2 grow mt-4" style="width: 600px">
                 <div class="card-header">
                     <div class="d-flex justify-content-center social_icon">
                         <span><i class="fas fa-clipboard fa-3x"></i></span>
@@ -116,7 +116,7 @@
                                 <span class="input-group-text"><i class="far fa-clipboard"></i></span>
                             </div>
                             <input type="text" class="form-control" disabled placeholder="Descrição do Ambiente *">
-                            <textarea class="form-control z-depth-1" name="descricao" id="exampleFormControlTextarea6" style="border: solid 1px; opacity: 0.5; border-radius: 5px;" placeholder="Ex: Empresa, Universidade, Museu, Restaurante, etc.&#10No ambiente possuímos móveis com cores em madeira..." rows="2" maxlength="255" required></textarea>
+                            <textarea class="form-control z-depth-1" name="descricao" id="exampleFormControlTextarea6" style="border: solid 1px rgba(192,192,192,0.5);border-radius: 5px;" placeholder="Ex: Empresa, Universidade, Museu, Restaurante, etc.&#10No ambiente possuímos móveis com cores em madeira..." rows="2" maxlength="255" required></textarea>
                         </div>
                         
                         <div class="form-group d-flex row">

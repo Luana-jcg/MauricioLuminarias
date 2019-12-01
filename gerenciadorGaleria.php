@@ -25,6 +25,14 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
     
     <title>Maurício Luminárias</title>    
+    
+    <script>
+        function excluir(id){
+            if(confirm('Deseja realmente excluir esta foto?')){
+                location.href = 'bd/deletarFoto.php?id=' + id;   
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -113,8 +121,8 @@
         </div>
       </div>
       
-      <div class="container mt-5" >
-            <table class="table border">
+      <div class="container mt-5 animated zoomIn" >
+            <table class="table border ">
                 <thead class="text-center thead-dark">
                     <tr style="font-size:20px;">
                     <th scope="col">Imagem</th>
@@ -141,7 +149,7 @@
                                 <td>
                                     <div class="row">
                                         <div class="col">
-                                            <a href="bd/deletarFoto.php?id=<?php echo $id ?>"><i class="fas fa-trash-alt text-dark"></i></a>
+                                            <a href="#" onclick="excluir( <?php echo $id; ?> )"><i class="fas fa-trash-alt text-dark"></i></a>
                                         </div>
                                     </div>
                                 </td>

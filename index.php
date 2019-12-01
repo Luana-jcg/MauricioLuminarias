@@ -109,11 +109,11 @@
                 </div>
             </div>
         </div>
-        <div >
+        <div>
             <ul style="list-style:none;" id="redeSociais">
                 <li class="mt-2"><a class="text-white" href="https://www.instagram.com/mauricioluminarias/"><img src="imagens/insta.png" style="width:40px;" alt=""></a></li>
                 <li class="mt-2"><a class="text-white" href="https://www.facebook.com/mauricio.luminarias.5"><img src="imagens/face.png" style="width:40px;" alt=""></a></li>
-                <li class="mt-2"><a class="text-white" href=""><img src="imagens/email.png" style="width:40px;" alt=""></a></li>
+                <li class="mt-2"><a class="text-white" href="mailto:luminariasmauricio@gmail.com"><img src="imagens/email.png" style="width:40px;" alt=""></a></li>
                 <li class="mt-2"><a class="text-white" href="https://api.whatsapp.com/send?phone=5522988465242&text=Ol%C3%A1%2C%20tenho%20interesse%20em%20adquirir%20seus%20produtos"><img src="imagens/whats.png" style="width:40px;" alt=""></a></li>
             </ul>
         </div>
@@ -209,7 +209,7 @@
             <div id="multi-item-example2" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
 
                 <!--Controls-->
-                <div class="controls-top d-flex justify-content-center">
+                <div class="controls-top d-flex justify-content-center" style="max-width:55%">
                     <a class="text-dark" href="#multi-item-example2" data-slide="prev"><i class="fas fa-arrow-circle-left fa-2x p-3"></i></a>
                     <a class="text-dark" href="#multi-item-example2" data-slide="next"><i class="fas fa-arrow-circle-right fa-2x p-3"></i></a>
                 </div>
@@ -222,8 +222,8 @@
                     <div class="carousel-item active">
 
                         <div class="col-md-3 mb-3">
-                            <div class="card" id="zoom">
-                                <img class="img-fluid" src="imagens/Low/Mini3.png" alt="Card image cap">
+                            <div class="card" id="zoom" style="max-width:340px;">
+                                <img class="img-fluid" src="imagens/Low/Mini3.png" style="min-width:auto;" alt="Imagens do maurício">
                             </div>
                         </div>
 
@@ -234,8 +234,8 @@
                     <div class="carousel-item">
 
                         <div class="col-md-3 mb-3">
-                            <div class="card" id="zoom">
-                                <img class="img-fluid" src="imagens/Low/Mini4.png" alt="Card image cap">
+                            <div class="card" id="zoom" style="max-width:340px;">
+                                <img class="img-fluid" src="imagens/Low/Mini4.png" style="min-width:auto;" alt="Imagens do maurício">
                             </div>
                         </div>
                     </div>
@@ -244,8 +244,8 @@
                     <div class="carousel-item">
 
                         <div class="col-md-3 mb-3">
-                            <div class="card" id="zoom">
-                                <img class="img-fluid" src="imagens/Low/Mini6.png" alt="Card image cap">
+                            <div class="card" id="zoom" style="max-width:340px;">
+                                <img class="img-fluid" src="imagens/Low/Mini6.png" style="min-width:auto;" alt="Imagens do maurício">
                             </div>
                         </div>
                     </div>
@@ -259,20 +259,20 @@
         </section>
     </div>
     <!-- ===========3º Container - Comentários =========== -->
-    <div class="box" id="container3" style="align-items: center;">
-        <div class="row d-flex" style="color:white;align-items:center;height:100%;">
+    <div class="box" id="container3">
+        <div class="row" style="color:white;align-items:center;padding-top:10%;">
             <div class="col-lg-6">
                 <div class="ml-4 mb-4">
                     <h4>Comentários mais relevantes:</h4>
                 </div>
 
-                <div class="card ml-4 mr-4 d-block" style="border: solid 1px; opacity: 0.5;min-width: 400px;" id="comentarioPai">
+                <div class="card ml-4 mr-4 d-block" style="border: solid 1px rgba(192,192,192,0.3);background:rgba(192,192,192,0.3);" id="comentarioPai">
                     <div class="row">
                         <div  class="col-sm-8 balao d-flex mt-1" id="ocultar">
-                            <p id="nome" class="text-dark text-start"></p>
+                            <p id="nome" class="text-light text-start"></p>
                         </div>
                         <div class="col" >
-                            <div class="estrelas mt-1 text-dark text-center">
+                            <div class="estrelas mt-1 text-center">
                                 <input type="radio" id="teste" name="nota" value="" checked="checked">
                                 
                                 <label for="teste1"><i class="fa estrelaLabel ml-1"></i></label>
@@ -296,12 +296,12 @@
                     </div>
 
                     <div class="ml-2">
-                        <p id="data" class="text-dark blockquote-footer"></p>
+                        <p id="data" class="text-light blockquote-footer"></p>
                     </div>
 
                     <div class="row container">
                         <div class="col-8" style="padding-left:-10px;">
-                            <p id="comentario" class="text-justify text-dark" style="opacity: 0.9;"></p>
+                            <p id="comentario" class="text-justify text-light" style="opacity: 0.9;"></p>
                         </div>
                     </div>
                 </div>
@@ -337,18 +337,17 @@
                             <label for="cm_star-5"><i class="fa estrelaLabel ml-1"></i></label>
                             <input type="radio" id="cm_star-5" name="nota" value="5" required/>
                         </div>
-<!--
                     <div id="recaptcha" class="g-recaptcha pt-4" data-sitekey="6LddWMAUAAAAADRCg4WisruBXquj-6cnR9lgyVKo"></div>
                     <span class="msg-error error"></span>
--->
                     </div>
                     <div class="form-group">
-                        <input id="btnenviar" name="btnenviar" type="submit" class="btn bg-light float-right login_btn">
+                        <input id="btnenviar" name="btnenviar" type="submit" class="nav-link btn btn-outline-light float-right login_btn"    >
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     
     <!-- =========== 4º Container - Sobre Maurício =========== -->
     <div class="container box2 pt-2 mt-4" id="container4">

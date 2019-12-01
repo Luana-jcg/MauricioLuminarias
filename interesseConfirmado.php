@@ -22,6 +22,14 @@
     <title>Maurício Luminárias</title>
 </head>
 
+<style>
+    body,
+    html {
+        background-image: url('imagens/Foto10.png');
+    }
+
+</style>
+
 <body>
 
     <?php
@@ -54,8 +62,9 @@
             <div class="d-flex justify-content-center h-100">
                 <div class="card">
                     <div class="card-body" style="background-color:#363636;">
-                        <p class="text-center mt-5" style="color:white">Interesse confirmado com sucesso.</p>
-                        <p class="text-center mt-5" style="color:white">Aguarde que em breve entraremos em contato.</p>
+                       <br>
+                        <p class="text-center mt-5" style="color:white"><b>Interesse confirmado com sucesso.</b></p>
+                        <p class="text-center mt-5" style="color:white"><b>Aguarde que em breve entraremos em contato.</b></p>
                     </div>
                 </div>
             </div>
@@ -80,7 +89,6 @@
     <!-- JavaScript (Opcional) -->
     <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="funcoesScript.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>

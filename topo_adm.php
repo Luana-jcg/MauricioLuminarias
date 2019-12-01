@@ -8,7 +8,7 @@
 <header class="justify-content-between">
     <nav class="navbar navbar-expand-md" style="background-color:#000" id="topoADM">
         <div>
-            logo
+            <img src="imagens/LOGO.png" style="max-width:40px" alt="">
         </div>
         <!-- Collapse button -->
         <button class="navbar-toggler text-white close-btn" data-toggle="collapse" data-target="#nav">
@@ -28,7 +28,7 @@
                 </li>
                 <?php if(isset($_SESSION['perfil'])){ ?>
                 <li class="nav-item d-inline">
-                    <a class="nav-link text-light" style="text-decoration:underline" href="adm.php">Administração</a>
+                    <a class="nav-link text-light" href="adm.php">Administração</a>
                 </li>
                 <?php } ?>
             </ul>
@@ -41,6 +41,7 @@
                 </li>
                 <?php }else{ ?>
                 <li class="nav-item">
+                    <a class="text-warning mr-3" href="alterarSenha.php" style="font-weight:bold;"><i class="mr-2 text-warning fas fa-key"></i></a>
                     <a class="text-warning" href="logoff.php" style="font-weight:bold;"><i class="mr-2 text-warning fas fa-sign-out-alt"></i>Sair</a>
                 </li>
                 <?php } ?>

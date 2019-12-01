@@ -49,6 +49,14 @@
     </script>
 </head>
 
+<style>
+    body,
+    html {
+        background-image: url('imagens/Foto10.png');
+    }
+
+</style>
+
 <body>
 
     <?php
@@ -79,7 +87,7 @@
 
             <!------ Início Conteúdo ----->
             <div class="d-flex justify-content-center h-100">
-                <div class="card h-100">
+                <div class="card h-100" style="background-color:#363636;">
                     <br>
                     <label class="text-center" style="color:white">Digite sua nova senha</label>
                     <br>

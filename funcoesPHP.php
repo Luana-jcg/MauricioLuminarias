@@ -1,8 +1,8 @@
 <?php
 
-    function enviaemail($body, $subject){
+    function enviaemail($body, $subject, $email){
 
-        $para = "luminariasmauricio@gmail.com";
+        $para = $email;
         $assunto = $subject;
         $mensagem = $body;
         $cabecalho = "Content-type: text/html; charset=ISO 8859-1" . "\r\n";
@@ -13,27 +13,27 @@
     }
 
     //Função envia link de confirmação de cadastro
-    function linkconfirmacao($chave){
+    function linkconfirmacao($chave, $email){
         $subject = 'Link para confirmação do interesse';
         $body = 'Olá,<br><br>
-        Link para confirmar seu interesse: <a href="http://localhost/tcc/interesseConfirmado.php?chave='.$chave.'">http://localhost/tcc/interesseConfirmado.php?chave='.$chave.'</a><br><br>
+        Link para confirmar seu interesse: <a href="http://localhost/tcc/interesseConfirmado.php?chave='.$chave.'">http://localhost/tcc/interesseConfirmado.php?chave='.$chave.'</a><br><br>Caso não tenha sido você que preencheu o formulário de interesse em nosso site, por favor, desconsidere este email.<br><br>
         <strong>ATENÇÂO: O link expira após 24 horas</strong><br><br><br>
         Atenciosamente,<br>
         Maurício Luminárias';
-        $retorno = enviaemail($body, $subject);
+        $retorno = enviaemail($body, $subject, $email);
         $status = ($retorno == "true") ? "sucesso" : $retorno;
         return $status;
     }
     
     //Função envia link de alteração de senha
-    function linksenha($chave){
+    function linksenha($chave, $email){
         $subject = 'Link para redefinição de senha';
         $body = 'Olá,<br><br>
         Link para redefinir sua senha: <a href="http://localhost/tcc/redefinirsenha.php?chave='.$chave.'">http://localhost/tcc/redefinirsenha.php?chave='.$chave.'</a><br><br>
         <strong>ATENÇÂO: O link expira após 24 horas</strong><br><br><br>
         Atenciosamente,<br>
         Maurício Luminárias';
-        $retorno = enviaemail($body, $subject);
+        $retorno = enviaemail($body, $subject, $email);
         $status = ($retorno == "true") ? "Email enviado com sucesso" : $retorno;
         return $status;
     }

@@ -2,7 +2,7 @@
 <header class="justify-content-between">
     <nav class="navbar navbar-expand-md">
         <div>
-            logo
+            <img src="imagens/LOGO.png" style="max-width:40px" alt="">
         </div>
         <!-- Collapse button -->
         <button class="navbar-toggler text-white close-btn" data-toggle="collapse" data-target="#nav">
@@ -35,6 +35,7 @@
                 </li>
                 <?php }else{ ?>
                 <li class="nav-item">
+                    <a class="text-warning mr-3" href="alterarSenha.php" style="font-weight:bold;"><i class="mr-2 text-warning fas fa-key"></i></a>
                     <a class="text-warning" href="logoff.php" style="font-weight:bold;"><i class="mr-2 text-warning fas fa-sign-out-alt"></i>Sair</a>
                 </li>
                 <?php } ?>
