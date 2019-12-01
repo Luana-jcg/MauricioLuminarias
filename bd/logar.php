@@ -18,6 +18,7 @@
                 $dados = mysqli_fetch_array($sql);
                 $_SESSION['perfil'] = $dados['perfil'];
                 $_SESSION['id'] = $dados['id_usuario'];
+                $_SESSION['nome'] = $dados['nome'];
                 $_SESSION['logado'] = true;
                 echo "sucesso";
             }else{

@@ -30,11 +30,11 @@
                 return "sucesso";
 
             }else{
-                return "erro ao mover";
+                return "Por favor, envie imagens de até 2,0 MB.";
             }
 
         }else{
-            return "formato inválido";
+            return "Arquivo não suportado. Formatos permitidos: jpg, jpeg, gif e png.";
         }
     }
     
@@ -74,7 +74,7 @@
             $sql_encomenda = "INSERT INTO encomenda VALUES (null, '{$descricao}', '{$medida}', {$quantidade}, '{$nome_imagem}', '{$cliente_id}', '{$chave_confirmacao}', '{$data_interesse}', 0, 0)";
 
             if(mysqli_query($con, $sql_encomenda)){
-                if(linkconfirmacao($chave_confirmacao) === "sucesso"){
+                if(linkconfirmacao($chave_confirmacao, $email) === "sucesso"){
                     echo "sucesso";
                 }
             }

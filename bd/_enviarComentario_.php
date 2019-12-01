@@ -7,15 +7,15 @@
         $email = $_POST['email'];
         $comentario = $_POST['comentario'];
         $nota = $_POST['nota'];
-//        $captcha = $_POST['g-recaptcha-response'];
+        $captcha = $_POST['g-recaptcha-response'];
     }
 
-//    if($captcha != ''){
-//        $secreto = '6LddWMAUAAAAAAW_PFJnWjOOS9OJ6EGpNwBERZwl';
-//        $ip      = $_SERVER['REMOTE_ADDR'];
-//        $var     = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secreto&response=$captcha&remoteip=$ip");
-//        $resposta = json_decode($var, true);
-//        if($resposta['success']){
+    if($captcha != ''){
+        $secreto = '6LddWMAUAAAAAAW_PFJnWjOOS9OJ6EGpNwBERZwl';
+        $ip      = $_SERVER['REMOTE_ADDR'];
+        $var     = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secreto&response=$captcha&remoteip=$ip");
+        $resposta = json_decode($var, true);
+        if($resposta['success']){
             
             if(empty($nome) || empty($email) || empty($comentario) || empty($nota)){
                 echo "Verifique se todos os campos obrigatórios foram preenchidos";
@@ -32,11 +32,11 @@
                 mysqli_close($con); 
             }
             
-//        }else{
-//            echo "Erro na Captcha. Por favor, tente novamente"; 
-//        }
-//    }else{
-//        echo "Por favor, selecione a Captcha";
-//    }
+        }else{
+            echo "Erro na Captcha. Por favor, tente novamente"; 
+        }
+    }else{
+        echo "Por favor, selecione a Captcha";
+    }
 
 ?>

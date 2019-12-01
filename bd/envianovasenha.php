@@ -19,7 +19,7 @@
         mysqli_query($con, "UPDATE usuarios SET chave_senha = '$chave_senha', data_expiracao_senha = '$data_senha' WHERE email = '$email'");
 
         //Chama a função de enviar email passando como parametro a chave gerada
-        $status = linksenha($chave_senha);
+        $status = linksenha($chave_senha, $email);
         
     //se a variável $sql não foi bem sucedida, ou seja se ela não estiver encontrado algum registro idêntico, o seu valor será igual a 0, então é exibido um alerta informando que o email informado não foi encontrado
     }else{
